@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-snoothing: antialiased;
+    -moz-osx-font-snoothing: grayscale;
+}
+
+:root{
+    font-size: 63.5%;
+}
+
+body{
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    color: #34355B;
+    height: 100vh;
+    display: flex;
+    font-size: 1.6rem;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#sorte p{
+    color: #000;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+main{
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 2rem 5rem 0px rgba(0, 0, 0, 0.80);
+    width: 42.8rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+#sorte{
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    padding: 1rem;
+    margin-bottom: 4rem;
+    animation: topdown 2s;
+
+}
+
+button{
+    margin-top: 3rem;
+    border-radius: 4px;
+    background: #FF9500;
+    text-align: center;
+    padding: 1.6rem;
+    border: none;
+    color: #FFF;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+button:hover{
+    background: #c97500;
+}
+
+.hide{
+    display: none;
+}
+
+
+#biscoito img:hover {
+    animation: treme 0.1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes treme {
+    0% {margin-left: 0;}
+    25% {margin-left: 5px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -5px;}
+    100% {margin-left: 0;}
+  }
+
+  @keyframes topdown{
+    0%{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
